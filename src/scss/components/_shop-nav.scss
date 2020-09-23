@@ -1,7 +1,11 @@
 .shop-nav {
   display: flex;
   align-items: center;
-
+  &__item{
+    &:not(:last-child){
+      margin-right: 25px;
+    }
+  }
   &__link {
     display: inline-block;
     width: 16px;
