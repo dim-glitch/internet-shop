@@ -1,0 +1,44 @@
+.visually-hidden {
+}
+.container {
+}
+.main-products {
+
+		// .main-products__container
+
+		&__container {
+      padding-top: 55px;
+      padding-bottom: 55px;
+		}
+
+		// .main-products__nav
+
+		&__nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 46px;
+		}
+
+		// .main-products__item
+
+		&__item {
+
+		}
+
+		// .main-products__btn
+
+		&__btn {
+      font-size: 24px;
+      margin: 0 18px;
+      &--current {
+        &::before {
+          opacity: 1;
+          transition: opacity 0.15s;
+        }
+      }
+		}
+}
+.btn-reset {
+}
+.main-link {
+}
