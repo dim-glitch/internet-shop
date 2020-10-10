@@ -1,0 +1,17 @@
+.footer {
+  &__content {
+    padding: 0 260px;
+    padding-top: 100px;
+  }
+  &__top {
+    display: flex;
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    color: var(--color-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+}
