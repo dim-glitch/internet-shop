@@ -1,7 +1,7 @@
 .catalog-filters {
   width: 309px;
   padding-top: 28px;
-  padding-right: 66px;
+  padding-right: 62px;
 }
 
 .catalog-content {
@@ -19,14 +19,17 @@
 }
 .catalog-filter {
   border-top: 1px solid #eee;
+
   // .catalog-filter__top
 
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 31px;
+    padding-top: 34px;
     padding-bottom: 34px;
+    cursor: pointer;
+    user-select: none;
   }
 
   // .catalog-filter__caption
@@ -52,6 +55,11 @@
     margin-left: 5px;
     min-width: 16px;
     transform: translateY(-1px);
+  }
+  &__bottom{
+    display: none;
+    padding-bottom: 34px;
+
   }
 
   // .catalog-filter__toggle
@@ -82,6 +90,29 @@
       width: 100%;
       background-color: currentColor;
     }
+  }
+  &__items{
+    columns: 2;
+  }
+  &__item{
+    margin-bottom: 14px;
+    &:last-child(5n){
+      margin-bottom: 0;
+    }
+  }
+  &--open{
+    .catalog-filter__bottom{
+      display: block;
+    }
+    .catalog-filter__toggle{
+      &::before{
+        display: none;
+      }
+    }
+
+  }
+  &:last-child {
+    border-bottom: 1px solid #eee;
   }
 }
 .custom-checkbox {
